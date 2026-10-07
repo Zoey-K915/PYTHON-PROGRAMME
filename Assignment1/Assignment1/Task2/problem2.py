@@ -7,7 +7,10 @@ def sat(li: List[int]):
 def sol():
     """Find a list integers such that the integer i occurs i times, for i = 0, 1, 2, ..., 9."""
     # TODO: your implementation here
-    return  # return a list
+    result = []
+    for i in range(10):
+        result.extend([i]*i)
+    return result
 
 
 print(sat(sol()))

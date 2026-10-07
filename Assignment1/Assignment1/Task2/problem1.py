@@ -7,7 +7,7 @@ def sat(li: List[int]):
 def sol():
     """Find a list of one hundred integers between 0 and 999 which all differ by at least ten from one another."""
     # TODO: your implementation here
-    return  # return a list
+    return  list(range(0, 1000, 10))
 
 
 print(sat(sol()))

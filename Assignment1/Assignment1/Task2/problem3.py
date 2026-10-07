@@ -7,7 +7,8 @@ def sat(li: List[int]):
 def sol():
     """Find a permutation of [0, 1, ..., 998] such that the ith element is *not* i, for all i=0, 1, ..., 998."""
     # TODO: your implementation here
-    return  # return a list
+    lst = list(range(999))
+    return [lst[-1]] + lst[:-1]
 
 
 print(sat(sol()))

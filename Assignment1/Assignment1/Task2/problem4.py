@@ -13,7 +13,16 @@ def sol(n=14235764939971075543215213):
     12345 => 15
     """
     # TODO: your implementation here
-    return  # return an integer
+    product = 1
+    has_odd = False
+    for c in str(n):
+        digit = int(c)
+        if digit % 2 == 1:
+            product *= digit
+            has_odd = True
+    if not has_odd:
+        return 0
+    return product
 
 
 print(sat(sol()))
